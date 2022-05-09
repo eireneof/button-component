@@ -1,3 +1,11 @@
 <main>
-    <app-button btnClass="text" btnLabel="Clique aqui" (btnAction)="teste()" [boxShadow]="false" [btnDisabled]="true"></app-button>
+  <app-button
+    btnLabel="Clique aqui"
+    (btnAction)="teste()"
+    [boxShadow]="false"
+    [btnDisabled]="false"
+    [btnIcon]="true"
+    btnIconName="settings"
+    btnIconPosition="right"
+  ></app-button>
 </main>

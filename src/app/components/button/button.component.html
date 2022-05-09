@@ -1,3 +1,15 @@
-<button [ngClass]="btnClass" [class.box-shadow]="boxShadow" (click)="handleBtnAction($event)"  [disabled]="btnDisabled">
-    {{ btnLabel }}
+<button
+  [ngClass]="btnClass"
+  [class.box-shadow]="boxShadow"
+  [class.reverse-items]="btnIconPosition == 'left'"
+  (click)="handleBtnAction($event)"
+  [disabled]="btnDisabled"
+>
+  {{ btnLabel }}
+  <mat-icon
+    *ngIf="btnIcon"
+    aria-hidden="false"
+    aria-label="Example home icon"
+    >{{ btnIconName }}</mat-icon
+  >
 </button>

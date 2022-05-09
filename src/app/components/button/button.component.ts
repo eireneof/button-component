@@ -8,9 +8,12 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 export class ButtonComponent implements OnInit {
 
   @Input() btnLabel: string = 'Default';
-  @Input() btnClass: 'default' | 'outline' | 'text' = 'default';
+  @Input() btnClass: 'button' | 'outline' | 'text' = 'button';
   @Input() boxShadow: boolean = true;
   @Input() btnDisabled: boolean = false;
+  @Input() btnIcon: boolean = false;
+  @Input() btnIconName: string = 'favorite';
+  @Input() btnIconPosition: 'left' | 'right' = 'right';
 
   @Output() btnAction = new EventEmitter<MouseEvent>();
 
