@@ -11,7 +11,7 @@ button {
   border-radius: 0.38rem;
   cursor: pointer;
   background-color: transparent;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .sm {
@@ -32,14 +32,35 @@ button {
   height: 2.6rem;
 }
 
-.button {
+.default {
   color: var(--text-default);
   background-color: var(--default);
 }
 
-.button:hover,
-.button:focus {
-  background-color: var(--default-focus);
+.primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.danger {
+  background-color: var(--danger);
+  color: var(--white);
+}
+
+.default:hover,
+.default:focus,
+.primary:hover,
+.primary:focus,
+.secondary:hover,
+.secondary:focus,
+.danger:hover,
+.danger:focus {
+  filter: brightness(0.7);
 }
 
 .box-shadow {
@@ -62,7 +83,8 @@ button {
   background-color: var(--outline-focus);
 }
 
-.button:disabled, .outline:disabled {
+.button:disabled,
+.outline:disabled {
   background-color: var(--default);
   color: var(--text-disabled);
   border: none;
@@ -78,5 +100,3 @@ button {
 .reverse-items {
   flex-direction: row-reverse;
 }
-
-
