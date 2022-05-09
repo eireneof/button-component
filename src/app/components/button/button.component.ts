@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -10,9 +10,15 @@ export class ButtonComponent implements OnInit {
   @Input() btnLabel: string = 'Default';
   @Input() btnClass: 'default' | 'outline' | 'text' = 'default';
 
+  @Output() btnAction = new EventEmitter<MouseEvent>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  handleBtnAction(event: MouseEvent): void { 
+    this.btnAction.emit(event);
   }
 
 }
