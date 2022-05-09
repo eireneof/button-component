@@ -40,3 +40,16 @@ button {
 .text:focus {
   background-color: var(--outline-focus);
 }
+
+.default:disabled, .outline:disabled {
+  background-color: var(--default);
+  color: var(--text-disabled);
+  border: none;
+  cursor: not-allowed;
+}
+
+.text:disabled {
+  background-color: transparent;
+  color: var(--text-disabled);
+  cursor: not-allowed;
+}

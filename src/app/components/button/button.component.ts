@@ -10,6 +10,7 @@ export class ButtonComponent implements OnInit {
   @Input() btnLabel: string = 'Default';
   @Input() btnClass: 'default' | 'outline' | 'text' = 'default';
   @Input() boxShadow: boolean = true;
+  @Input() btnDisabled: boolean = false;
 
   @Output() btnAction = new EventEmitter<MouseEvent>();
 
