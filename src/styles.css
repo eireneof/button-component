@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --default: #E0E0E0;
+    --default-focus: #AEAEAE;
+
+    --outline-focus: rgba(41, 98, 255, 0.1);
+
+    --primary: #3D5AFE;
+    --primary-focus: #0039CB;
+
+    --secondary: #455A64;
+    --secondary-focus: #1C313A;
+
+
+    --text-default: #3F3F3F;
+    --text-disabled: #9E9E9E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    @media (max-width: 1080px) {
+        font-size: 93.75%;
+    }
+    @media (max-width: 720px) {
+        font-size: 87.5%;
+    }
+}
