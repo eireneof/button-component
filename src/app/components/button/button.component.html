@@ -1,7 +1,11 @@
+<!-- como colocar mais de um argumento desse tipo no ng class? -->
 <button
   [ngClass]="btnClass"
   [class.box-shadow]="boxShadow"
   [class.reverse-items]="btnIconPosition == 'left'"
+  [class.sm]="btnSize == 'sm'"
+  [class.md]="btnSize == 'md'"
+  [class.lg]="btnSize == 'lg'"
   (click)="handleBtnAction($event)"
   [disabled]="btnDisabled"
 >

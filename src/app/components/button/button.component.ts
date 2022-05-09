@@ -14,6 +14,7 @@ export class ButtonComponent implements OnInit {
   @Input() btnIcon: boolean = false;
   @Input() btnIconName: string = 'favorite';
   @Input() btnIconPosition: 'left' | 'right' = 'right';
+  @Input() btnSize: 'sm' | 'md' | 'lg'  = 'sm';
 
   @Output() btnAction = new EventEmitter<MouseEvent>();
 
