@@ -1,27 +1,15 @@
-# ButtonComponent
+# Button component
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
+**Challenge:** Create a reusable button with all the states in the design and a page displaying all the states. You can work on the same project with other design system challenges. Use Front-end libraries like React or Vue. Don’t look at the existing solution. Fulfill user stories below:
 
-## Development server
+- [x] **User story:** I can see different button types: default, outline and text
+- [ ] **User story:** I can choose to disable box-shadow
+- [ ] **User story:** I can choose to disable the button
+- [ ] **User story:** I can choose to have an icon on the left or right (Use Google Icon and at least 5 variants)
+- [ ] **User story:** I can have different button sizes
+- [ ] **User story:** I can have different colors
+- [ ] **User story:** When I hover or focus, I can see visual indicators
+- [ ] **User story:** I can still access all button attributes
+- [ ] **User story (optional):** Show button in a similar way like the design or use Storybook. Otherwise, showing the button in multiple states is enough
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[*Icons*](https://google.github.io/material-design-icons/)
