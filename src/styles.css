@@ -1,33 +1,34 @@
 :root {
-    --default: #E0E0E0;
-    --default-focus: #AEAEAE;
+  --default: #e0e0e0;
+  --default-focus: #aeaeae;
 
-    --outline-focus: rgba(41, 98, 255, 0.1);
+  --outline-focus: rgba(41, 98, 255, 0.1);
 
-    --primary: #3D5AFE;
-    --primary-focus: #0039CB;
+  --primary: #3d5afe;
+  --primary-focus: #0039cb;
 
-    --secondary: #455A64;
-    --secondary-focus: #1C313A;
+  --secondary: #455a64;
+  --secondary-focus: #1c313a;
 
+  --danger: #d32f2f;
 
-    --text-default: #3F3F3F;
-    --text-disabled: #9E9E9E;
+  --text-default: #3f3f3f;
+  --text-disabled: #9e9e9e;
+
+  --white: #ffffff;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    @media (max-width: 1080px) {
-        font-size: 93.75%;
-    }
-    @media (max-width: 720px) {
-        font-size: 87.5%;
-    }
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
